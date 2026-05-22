@@ -11,8 +11,7 @@ MSAL authentication demo using:
 # Packages Used
 
 ## Angular
-@azure/msal-browser
-@azure/msal-angular
+npm install @azure/msal-browser @azure/msal-angular
 ```
 ## .NET
 Microsoft.Identity.Web
