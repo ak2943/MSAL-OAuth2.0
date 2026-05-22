@@ -1,0 +1,31 @@
+# Angular
+node_modules/
+dist/
+.angular/
+coverage/
+
+# .NET
+bin/
+obj/
+
+# Visual Studio
+.vs/
+.vscode/
+
+# User files
+*.user
+*.suo
+*.rsuser
+
+# Logs
+*.log
+
+# Packages
+packages/
+
+# ASP.NET frontend libs
+wwwroot/lib/
+
+# OS files
+Thumbs.db
+.DS_Store

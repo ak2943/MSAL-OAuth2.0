@@ -1,0 +1,48 @@
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <h1>🔐 MSAL Angular Demo</h1>
+    <p>Azure AD Authentication + Protected API Call</p>
+  </header>
+
+  <!-- Action Buttons -->
+  <section class="card actions">
+    <button (click)="login()" style="padding:10px 14px; margin-right:8px; border:0; border-radius:6px; background:#2563eb; color:white; cursor:pointer;">
+      Login
+    </button>
+
+    <button (click)="logout()" style="padding:10px 14px; margin-right:8px; border:0; border-radius:6px; background:#dc2626; color:white; cursor:pointer;">
+      Logout
+    </button>
+
+    <button (click)="callApi()" style="padding:10px 14px; border:0; border-radius:6px; background:#16a34a; color:white; cursor:pointer;">
+      Call API
+    </button>
+  </section>
+
+  <!-- User Info -->
+  <section class="card" *ngIf="user">
+    <h2>👤 User Info</h2>
+    <div class="info-grid">
+      <div>
+      <p><strong>Name:</strong> {{ user.name }}</p>
+    </div>
+    <div>
+      <p><strong>Email:</strong> {{ user.username }}</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- API Result -->
+  <section class="card" *ngIf="apiResult?.length > 0">
+    <h2>🌐 API Result</h2>
+
+    <ul class="list">
+      <li *ngFor="let item of apiResult">
+        {{ item }}
+      </li>
+    </ul>
+  </section>
+
+</div>
